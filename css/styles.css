@@ -1,0 +1,240 @@
+:root{
+    --primary-text-color: #757575;
+    --text-color:#212121;
+    --accent-color:#2196F3;
+    --primary-white-color:#FFFFFF;
+    --logo-color:#000000;
+}
+
+/* ul{
+    margin: 0;
+    padding: 0;
+} */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {   margin: 0;
+}
+
+ul,
+ol {
+    padding-left: 0;
+    margin: 0;
+}
+
+
+body{
+    font-family: Roboto, sans-serif;
+    background-color: var(--primary-white-color);
+    color: var(--primary-text-color);
+    letter-spacing: 0.03em;
+    }
+.list{
+    list-style: none;
+}
+
+    /* стилі шапки */
+.container{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items:center
+    }
+.main-nav{
+    display: flex;
+}
+.page-header{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    }
+
+.logo{
+   color:var(--logo-color);
+    font-family: 'Raleway';
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
+    margin-right: 90px;
+
+
+}
+
+.logo-web{
+    color: var(--accent-color);
+}
+
+.logo-footer {
+    color: var(--primary-white-color);
+    font-family: 'Raleway';
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
+}
+
+.site-nav{
+    display: flex;
+}
+.site-nav .item:not(:last-child) {
+    margin-right: 50px;
+}
+.site-nav .link{
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+.site-nav .link:hover, .site-nav .link:focus {
+    color: var(--accent-color);
+}
+.contact-nav{
+    display: flex;
+    justify-content: flex-end;
+}
+.contact-nav .link{
+    color: var(--primary-text-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    }
+.contact-nav .item + .item{
+    margin-left:  50px;;
+    }
+.contact-nav .link:hover, .contact-nav .link:focus {
+    color: var(--accent-color);
+}
+
+/* секція герой */
+.hero{
+    background-color: #2F303A;
+    text-align: center;
+}
+.hero-container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 695px;
+}
+.hero-title{
+    color: var(--primary-white-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase; 
+    margin-bottom: 30px; 
+}
+.hero-button{
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 10px 32px;
+    display: inline-block;
+    border-color: transparent;
+
+}
+/* переваги */
+.item-title{
+    color:var(--text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+.item-text{
+    color: var(--primary-text-color) ;
+    font-size: 14px;
+    line-height:1.71;
+}
+.features{
+    display: flex;  
+}
+
+/* чим ми займаємось та наша команда */
+.section-title{
+    color: var(--text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+}
+
+
+/* команда */
+.member .member-text{
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+}
+.member{
+    color: var(--text-color);
+    font-weight: 500;
+    text-align: center;
+}
+.member-text{
+    text-align: center;
+}
+
+/* стилі футера */
+.footer{
+    background-color:#2F303A ;
+}
+.footer-link{
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.71;  
+}
+    
+.address{
+    color: var(--primary-white-color);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+/* portfolio-стилі */
+.button.examples {
+    color: var(--text-color);
+    background-color: #F5F4FA;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+}
+
+button.examples:hover {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
+
+.works-examples{
+    color: var(--text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+}
+.works-text{
+    color: var(--primary-text-color);
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+}
