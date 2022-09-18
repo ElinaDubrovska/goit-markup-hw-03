@@ -48,7 +48,9 @@ body{
     display: flex;
 }
 .page-header{
-    width: 1200px;
+    width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -117,6 +119,8 @@ body{
 .hero{
     background-color: #2F303A;
     text-align: center;
+    height: 600px;
+    margin-bottom: 90px;
 }
 .hero-container{
     margin-left: auto;
@@ -132,6 +136,8 @@ body{
     letter-spacing: 0.06em;
     text-transform: uppercase; 
     margin-bottom: 30px; 
+    padding-top:  200px;
+
 }
 .hero-button{
     color: var(--primary-white-color);
@@ -150,6 +156,21 @@ body{
 
 }
 /* переваги */
+.container-features{
+width: 1230px; 
+padding-left: 15px;
+padding-right: 15px;
+margin-left: auto;
+margin-right: auto;
+
+}
+.list.features{
+   display: flex;  
+   flex-wrap: wrap;
+   margin-bottom: 120px;
+
+
+}
 .item-title{
     color:var(--text-color);
     font-weight: 700;
@@ -162,9 +183,14 @@ body{
     font-size: 14px;
     line-height:1.71;
 }
-.features{
-    display: flex;  
+.features-elements{
+    width: 270px;
+    margin-right: 30px;
 }
+.features-elements:last-child {
+    margin-right:0;
+}
+
 
 /* чим ми займаємось та наша команда */
 .section-title{
@@ -173,6 +199,14 @@ body{
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
+}
+.list.images{
+    display: flex;
+    margin-left: -30px;
+}
+.image{
+flex-basis: calc((100%-90px) / 3);
+    margin-left: 30px;
 }
 
 
@@ -210,6 +244,9 @@ body{
 }
 
 /* portfolio-стилі */
+.head-main{
+    color: transparent;
+}
 .button.examples {
     color: var(--text-color);
     background-color: #F5F4FA;
@@ -224,7 +261,11 @@ button.examples:hover {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
 }
-
+.work-list{
+    list-style: none;
+    display: flex;
+    text-align: center;
+}
 .works-examples{
     color: var(--text-color);
     font-weight: 700;
