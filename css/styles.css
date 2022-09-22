@@ -29,7 +29,18 @@ img {
     max-width: 100%;
     height: auto;
 }
-
+.visually-hidden { 
+    position: absolute; 
+    white-space: nowrap; 
+    width: 1px; 
+    height: 1px; 
+    overflow: hidden; 
+    border: 0; 
+    padding: 0; 
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%); 
+    margin: -1px; 
+  }
 
 body{
     font-family: Roboto, sans-serif;
@@ -61,8 +72,9 @@ body{
     padding-right: 15px;
     display: flex;
     align-items: center;
-    
-     }
+    margin-bottom: 25px;
+    margin-top: 24px;
+    }
 
 
 .logo{
@@ -254,6 +266,7 @@ margin-bottom: 118px;
 .member{
     color: var(--text-color);
     font-weight: 500;
+    font-size: 16px;
     text-align: center;
     margin-bottom: 10px;
 }
@@ -302,24 +315,21 @@ margin-bottom: 118px;
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
     font-size: 14px;
-    line-height: 1.71;  
-}
-.footer-link.address-link{
-    color: var(--primary-white-color);
-}
-    
-.address{
-    color: var(--primary-white-color);
+    line-height: 1.71; 
     font-style: normal;
-    font-size: 14px;
-    line-height: 1.71;
-   
+ 
 }
 
+.address-link{
+    color: var(--primary-white-color);
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.71;  
+    font-style: normal;
+ }  
+
 /* portfolio-стилі */
-.head-main{
-    color: transparent;
-}
+
 .conteiner-works{
     display: flex;
     margin-left: auto;
@@ -330,11 +340,15 @@ width: 1200px;
 padding-left: 15px;
 padding-right: 15px;
 margin-left: auto;
-margin-right: auto;}
+margin-right: auto;
+margin-top: 94px;
+}
+
 
 .button-examples {
     color: var(--text-color);
     background-color: #F5F4FA;
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
