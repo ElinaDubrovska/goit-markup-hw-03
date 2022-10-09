@@ -76,7 +76,7 @@ body{
 .header-container{
      display: flex;
      align-items: center;
-     /* justify-content: space-between; */
+  
     }
 .header-nav{
     display: flex;
@@ -234,10 +234,6 @@ border-radius: 0px 0px 4px 4px;
 .team-section{
     background-color: #F5F4FA;
 }
-/* .member-text{
-    text-align: center;
-} */
-
 /* стилі футера */
 .footer{
     background-color:#2F303A ;
@@ -252,16 +248,13 @@ border-radius: 0px 0px 4px 4px;
     font-style: normal;
  
 }
-
 .address-link{
     color: var(--primary-white-color);
     text-decoration: none;
     font-size: 14px;
     line-height: 1.71;  
     font-style: normal;
- }   
-
-
+ } 
 /* portfolio-стилі */
 .button.examples {
     color: var(--text-color);
@@ -278,15 +271,12 @@ border-radius: 0px 0px 4px 4px;
     padding: 6px 22px;
     border-color: transparent;
 }
-
 button.examples:hover, 
 button.examples:focus, 
 button.examples{
     color: var(--primary-white-color);
     background-color: var(--accent-color);
 }
-
-
 .btn-list{
     display: flex;
     justify-content: center;
@@ -312,9 +302,7 @@ button.examples{
     letter-spacing: 0.03em;
 }
 .work-container{
-    margin: 20px 24px;
 
-}
-.work-card{
+    padding: 20px 24px;
     border: 1px solid #EEEEEE;
 }
