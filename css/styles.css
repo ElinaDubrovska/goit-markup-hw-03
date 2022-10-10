@@ -62,10 +62,7 @@ body{
       clip-path: inset(50%);
       margin: -1px;
   }
-.section{
-    padding-top: 94px;
-    padding-bottom: 94px;  
-}
+
 
     /* стилі шапки */
 .header{
@@ -177,6 +174,10 @@ body{
     border-color: transparent;
 
 }
+
+.hero-button:hover,
+.hero-button:focus{
+    background-color: #188CE8;}
 /* переваги */
 .item-title{
     color:var(--text-color);
@@ -194,7 +195,10 @@ body{
     display: flex;
     gap: 30px;
 }
-
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;  
+}
 /* чим ми займаємось та наша команда */
 .section-title{
     color: var(--text-color);
@@ -208,7 +212,9 @@ body{
     display: flex;
     gap: 30px;
 }
-
+.section-work{
+    padding-bottom: 94px;
+}
 /* команда */
 .member-text{
     font-size: 16px;
@@ -246,7 +252,11 @@ border-radius: 0px 0px 4px 4px;
     font-size: 14px;
     line-height: 1.71; 
     font-style: normal;
- 
+    margin-bottom: 9px;
+
+}
+.logo-footer-container{
+    margin-bottom: 20px;
 }
 .address-link{
     color: var(--primary-white-color);
@@ -254,7 +264,16 @@ border-radius: 0px 0px 4px 4px;
     font-size: 14px;
     line-height: 1.71;  
     font-style: normal;
+    margin-bottom: 9px;
  } 
+ .address-link:hover, 
+ .address-link:focus
+ { color: var(--accent-color);
+ }
+ .footer-link:hover, 
+ .footer-link:focus
+ { color: var(--accent-color);
+ }
 /* portfolio-стилі */
 .button.examples {
     color: var(--text-color);
