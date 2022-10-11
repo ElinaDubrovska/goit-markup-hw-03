@@ -66,8 +66,8 @@ body{
 
     /* стилі шапки */
 .header{
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 24px;
+    padding-bottom: 24px;
     border-bottom: 1px solid #ECECEC
     }
 .header-container{
@@ -185,6 +185,7 @@ body{
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 .item-text{
     color: var(--primary-text-color) ;
@@ -230,7 +231,8 @@ body{
 
 }
 .team-member-container{
-margin: 30px auto;
+padding-top: 30px;
+padding-bottom: 30px;
 }
 .member-card{
     background: #FFFFFF;
@@ -246,26 +248,30 @@ border-radius: 0px 0px 4px 4px;
     padding-top: 60px;
     padding-bottom: 60px;
 }
-.footer-link{
-    color: rgba(255, 255, 255, 0.6);
-    text-decoration: none;
-    font-size: 14px;
-    line-height: 1.71; 
-    font-style: normal;
-    margin-bottom: 9px;
-
-}
-.logo-footer-container{
-    margin-bottom: 20px;
-}
 .address-link{
     color: var(--primary-white-color);
     text-decoration: none;
     font-size: 14px;
     line-height: 1.71;  
     font-style: normal;
+    display: block;
     margin-bottom: 9px;
  } 
+.footer-link{
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.71; 
+    font-style: normal;
+    display: block;
+}
+.footer-link:not(:last-child){
+       margin-bottom: 9px; 
+}
+.logo-footer-container{
+    margin-bottom: 20px;
+}
+
  .address-link:hover, 
  .address-link:focus
  { color: var(--accent-color);
@@ -274,6 +280,7 @@ border-radius: 0px 0px 4px 4px;
  .footer-link:focus
  { color: var(--accent-color);
  }
+
 /* portfolio-стилі */
 .button.examples {
     color: var(--text-color);
